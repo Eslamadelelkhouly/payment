@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paymentapp/core/widgets/custom_button.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/widgets/order_info_item.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/widgets/total_price.dart';
 
@@ -16,17 +17,17 @@ class MyCartViewBody extends StatelessWidget {
           ),
           Image.asset('assets/images/Group 6.png'),
           const SizedBox(height: 25),
-          OrderInfoItem(
+          const OrderInfoItem(
             text: 'Order Subtotal',
             value: '\$42.97',
           ),
           const SizedBox(height: 3),
-          OrderInfoItem(
+          const OrderInfoItem(
             text: 'Discount',
             value: '\$0',
           ),
           const SizedBox(height: 3),
-          OrderInfoItem(
+          const OrderInfoItem(
             text: 'Shipping',
             value: '\$8',
           ),
@@ -34,7 +35,9 @@ class MyCartViewBody extends StatelessWidget {
             height: 34,
             thickness: 2,
           ),
-          TotalPrice(text: 'Total', value: '\$50.97'),
+          const TotalPrice(text: 'Total', value: '\$50.97'),
+          CustomButton(),
+          const SizedBox(height: 12),
         ],
       ),
     );
