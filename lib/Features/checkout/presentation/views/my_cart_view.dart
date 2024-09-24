@@ -9,7 +9,7 @@ class MyCartView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text(
+          child: const Text(
             'My Cart',
             style: Styles.textStyle25,
           ),
