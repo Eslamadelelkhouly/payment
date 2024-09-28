@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/custom_check_icon.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/custom_dashed_line.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/thank_card.dart';
 
 class ThankViewBody extends StatelessWidget {
   const ThankViewBody({super.key});
@@ -10,32 +13,12 @@ class ThankViewBody extends StatelessWidget {
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          Container(
-            decoration: ShapeDecoration(
-              color: Color(0xFFD9D9D9),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-            ),
-          ),
+          const ThankCard(),
           Positioned(
             bottom: MediaQuery.sizeOf(context).height * .2 + 20,
             left: 20 + 8,
             right: 20 + 8,
-            child: Row(
-              children: List.generate(
-                20,
-                (index) => Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 2),
-                    child: Container(
-                      height: 2,
-                      color: Color(0xFFB8B8B8),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            child: const CustomDashedLine(),
           ),
           Positioned(
             left: -20,
@@ -55,19 +38,7 @@ class ThankViewBody extends StatelessWidget {
             top: -50,
             left: 0,
             right: 0,
-            child: CircleAvatar(
-              radius: 50,
-              backgroundColor: Color(0xFFD9D9D9),
-              child: CircleAvatar(
-                radius: 40,
-                backgroundColor: Colors.green,
-                child: Icon(
-                  size: 50,
-                  Icons.check,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            child: const CustomCheckIcon(),
           ),
         ],
       ),
