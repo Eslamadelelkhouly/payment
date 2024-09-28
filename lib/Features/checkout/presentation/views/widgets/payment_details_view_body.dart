@@ -7,11 +7,13 @@ class PaymentDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        PaymentMethodListView(),
-        CustomCreditCard(),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          PaymentMethodListView(),
+          CustomCreditCard(),
+        ],
+      ),
     );
   }
 }
