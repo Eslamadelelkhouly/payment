@@ -19,6 +19,25 @@ class ThankViewBody extends StatelessWidget {
             ),
           ),
           Positioned(
+            bottom: MediaQuery.sizeOf(context).height * .2 + 20,
+            left: 20 + 8,
+            right: 20 + 8,
+            child: Row(
+              children: List.generate(
+                20,
+                (index) => Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 2),
+                    child: Container(
+                      height: 2,
+                      color: Color(0xFFB8B8B8),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
             left: -20,
             bottom: MediaQuery.sizeOf(context).height * .2,
             child: CircleAvatar(
