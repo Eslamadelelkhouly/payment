@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/custom_credit_card.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/widgets/payment_method.dart';
-import 'package:paymentapp/Features/checkout/presentation/views/widgets/paymeny_method_item.dart';
 
 class PaymentDetailsViewBody extends StatelessWidget {
   const PaymentDetailsViewBody({super.key});
@@ -10,6 +10,7 @@ class PaymentDetailsViewBody extends StatelessWidget {
     return Column(
       children: [
         PaymentMethodListView(),
+        CustomCreditCard(),
       ],
     );
   }
