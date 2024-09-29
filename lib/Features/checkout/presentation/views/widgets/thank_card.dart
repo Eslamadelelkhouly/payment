@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/card_info_widget.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/widgets/payment_item_info.dart';
+import 'package:paymentapp/Features/checkout/presentation/views/widgets/total_price.dart';
 import 'package:paymentapp/core/utils/styles.dart';
 
 class ThankCard extends StatelessWidget {
@@ -50,6 +53,13 @@ class ThankCard extends StatelessWidget {
               title: 'To',
               value: 'Sam Louis',
             ),
+            const Divider(
+              height: 60,
+              thickness: 2,
+            ),
+            TotalPrice(text: 'Total', value: '\$50.97'),
+            SizedBox(height: 30),
+            const CardInfoWidget(),
           ],
         ),
       ),
