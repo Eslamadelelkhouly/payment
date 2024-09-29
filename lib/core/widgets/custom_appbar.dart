@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paymentapp/core/utils/styles.dart';
 
-AppBar BuildAppBar({required final String title}) {
+AppBar BuildAppBar({required final String? title}) {
   return AppBar(
     leading: IconButton(
       onPressed: () {},
@@ -10,7 +10,7 @@ AppBar BuildAppBar({required final String title}) {
     centerTitle: true,
     title: Text(
       textAlign: TextAlign.center,
-      title,
+      title ?? '',
       style: Styles.textStyle25,
     ),
   );
