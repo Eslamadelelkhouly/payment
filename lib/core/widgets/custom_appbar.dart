@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paymentapp/core/utils/styles.dart';
 
-AppBar BuildAppBar({required final String? title}) {
+AppBar BuildAppBar({final String? title}) {
   return AppBar(
     leading: IconButton(
       onPressed: () {},
