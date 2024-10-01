@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/my_cart_view.dart';
 
 void main() {
@@ -16,3 +17,7 @@ class CheckoutApp extends StatelessWidget {
     );
   }
 }
+
+// paymentIntentObject create payment intent(amount,currency)
+// init payment sheet (paymentintentsecret)
+// presnet paymentsheet

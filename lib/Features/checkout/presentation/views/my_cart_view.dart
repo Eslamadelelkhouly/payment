@@ -12,6 +12,4 @@ class MyCartView extends StatelessWidget {
       body: const MyCartViewBody(),
     );
   }
-
-  
 }
