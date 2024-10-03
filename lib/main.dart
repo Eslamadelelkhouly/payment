@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:paymentapp/Features/checkout/presentation/views/my_cart_view.dart';
+import 'package:paymentapp/core/utils/api_keys.dart';
 
 void main() {
+  Stripe.publishableKey = ApiKeys.publishableKey;
   runApp(const CheckoutApp());
 }
 
