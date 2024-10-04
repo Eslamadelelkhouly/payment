@@ -16,6 +16,5 @@ class CheckoutRepoImpl extends CheckoutRepo {
     } catch (e) {
       return left(ServerFailure(errorMessage: e.toString()));
     }
-
   }
 }
